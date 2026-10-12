@@ -1,34 +1,41 @@
-# 🚀 AI Engineering — Learning Roadmap
+# AI Engineering
 
-My structured journey from **Backend Java Engineer** → **Applied AI Engineer** + **10x Developer**.
+My path from **backend Java engineer** to **forward-deployed AI engineer**: building production AI systems on real organisation data. RAG, safe agents, evals, and deployment on AWS. Applied engineering, not research.
 
-## 📋 Two Parallel Tracks
+**📍 [Read the roadmap →](ROADMAP.md)**
 
-### [🧠 AI Engineer Roadmap](ai-engineer-roadmap.md) — 18 Months
-The deep path: Python fluency, ML fundamentals, transformers, LLM APIs, RAG, agents, evals, and production AI systems. Goal: land an Applied AI Engineer role by Aug 2027.
+## Where I am
 
-### [🚀 10x Developer Roadmap](10x-developer-roadmap.md) — 3 Months
-The leverage path: Master Claude Code, MCP, sub-agents, and AI-first development workflows. Build a real app (LoveBytes) while becoming radically more productive.
+| Phase | Window | Status |
+|---|---|---|
+| 00 · Foundations & mental model | 12–25 Oct | 🟡 In progress |
+| 01 · RAG over real data, measured from day one | 26 Oct–15 Nov | ⚪ |
+| 02 · Safe agents and workflows | 16 Nov–6 Dec | ⚪ |
+| 03 · Evals and observability | 7–20 Dec | ⚪ |
+| 04 · Deploy to AWS | 4–24 Jan | ⚪ |
+| 05 · Production hardening and FDE craft | 25 Jan–7 Feb | ⚪ |
+| 06 · Capstone and positioning | 8–28 Feb | ⚪ |
 
-## 🎯 Philosophy
+Dates are target windows. A phase is done when its exit criteria are met.
 
-- **Learn by building** — every topic has a hands-on project
-- **API-first** — work with models, don't train them from scratch
-- **Evals over vibes** — measure everything, trust data
-- **Ship to production** — portfolio projects must be deployable
+## The flagship project
 
-## 📺 Learning Style
-- **YouTube** — play during cardio sessions
-- **Courses** — structured progression
-- **Projects** — hands-on muscle memory
+**[Org Assistant](project/)**: a question-answering and action assistant over the [GitLab Handbook](https://handbook.gitlab.com/), a real company's internal docs. It's built in layers: cited answers, then access control and document sync, then safe actions, then evals in CI, then AWS, then hardening.
 
-## 📈 Status
+## Repo layout
 
-| Track | Phase | Status |
-|-------|-------|--------|
-| 10x Developer | Month 1 | 🟡 Starting |
-| AI Engineer | Phase 0 | 🟡 Starting |
+```
+ROADMAP.md     the plan: phases, milestones, resources, exit criteria
+journal.md     five lines a week: learned, built, stuck, next, hours
+learning/      one file per phase: notes, open questions, quiz answer
+project/       the flagship system, grown layer by layer
+scratch/       throwaway exercises and course labs
+archive/       earlier roadmaps (Feb 2026), kept for history
+```
 
----
+## Principles
 
-*Started: Feb 2026*
+- **One system, grown in layers.** Depth over breadth.
+- **Evals from day one.** Every change is measured against the golden set.
+- **Safe by default.** Read-only tools, approval before writes, limits on steps and cost.
+- **Ship it.** Deployed with Terraform and CI, or it doesn't count.

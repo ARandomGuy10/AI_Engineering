@@ -22,3 +22,18 @@ venv/
 # Build
 dist/
 build/
+
+# Secrets: never commit keys
+.env.*
+!.env.example
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!example.tfvars
+
+# Local data (handbook clone, database volumes)
+data/
+pgdata/
